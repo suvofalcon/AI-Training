@@ -181,3 +181,8 @@ cython_debug/
 02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/uuid_to_id_5d6f40bc-d6df-42cc-809d-e0ac48406263.pkl
 02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/uuid_to_id_8a8e0272-7d5a-4fd7-b487-402c11dadfae.pkl
 02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/chroma.sqlite3
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/chroma.sqlite3
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/data_level0.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/header.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/length.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/link_lists.bin
