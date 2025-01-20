@@ -161,3 +161,23 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .DS_Store
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/speech_embedding_db/chroma.sqlite3
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/speech_embedding_db/6159ff49-6fac-4d06-96c6-8f609dd27874/data_level0.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/speech_embedding_db/6159ff49-6fac-4d06-96c6-8f609dd27874/header.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/speech_embedding_db/6159ff49-6fac-4d06-96c6-8f609dd27874/length.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/speech_embedding_db/6159ff49-6fac-4d06-96c6-8f609dd27874/link_lists.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/chroma-collections.parquet
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/chroma-embeddings.parquet
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/id_to_uuid_1d925474-6e6b-444b-9bd4-6f2329c9d678.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/id_to_uuid_5d6f40bc-d6df-42cc-809d-e0ac48406263.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/id_to_uuid_8a8e0272-7d5a-4fd7-b487-402c11dadfae.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/index_1d925474-6e6b-444b-9bd4-6f2329c9d678.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/index_5d6f40bc-d6df-42cc-809d-e0ac48406263.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/index_8a8e0272-7d5a-4fd7-b487-402c11dadfae.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/index_metadata_1d925474-6e6b-444b-9bd4-6f2329c9d678.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/index_metadata_5d6f40bc-d6df-42cc-809d-e0ac48406263.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/index_metadata_8a8e0272-7d5a-4fd7-b487-402c11dadfae.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/uuid_to_id_1d925474-6e6b-444b-9bd4-6f2329c9d678.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/uuid_to_id_5d6f40bc-d6df-42cc-809d-e0ac48406263.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/index/uuid_to_id_8a8e0272-7d5a-4fd7-b487-402c11dadfae.pkl
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/mk_ultra/chroma.sqlite3
