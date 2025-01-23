@@ -186,3 +186,9 @@ cython_debug/
 02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/header.bin
 02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/length.bin
 02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_utra/cc7c83f6-a01d-4f69-984a-f195c70668e9/link_lists.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/mk_ultra/chroma.sqlite3
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/US_Constitution/chroma.sqlite3
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/US_Constitution/65c08cbb-9f36-4b12-a4ac-5a6f111e8c35/data_level0.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/US_Constitution/65c08cbb-9f36-4b12-a4ac-5a6f111e8c35/header.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/US_Constitution/65c08cbb-9f36-4b12-a4ac-5a6f111e8c35/length.bin
+02-GenerativeAI/01-LangChain_BootCamp/01-DataConnections/some_data/US_Constitution/65c08cbb-9f36-4b12-a4ac-5a6f111e8c35/link_lists.bin
