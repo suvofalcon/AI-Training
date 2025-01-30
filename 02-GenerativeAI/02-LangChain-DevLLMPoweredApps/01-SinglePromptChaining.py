@@ -1,7 +1,10 @@
 # Library imports
 import os
+import openai
 from langchain_openai import ChatOpenAI
 from langchain.prompts.prompt import PromptTemplate
+
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 information = """
 Elon Reeve Musk (/ˈiːlɒn/; EE-lon; born June 28, 1971) is a businessman and investor. He is the founder, chairman, CEO, and CTO of SpaceX; 
@@ -33,8 +36,7 @@ summary_prompt_template = PromptTemplate(
     input_variables=["information"], template=summary_template
 )
 
-model = ChatOpenAI(temperature=0.0, 
-                   model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"))
+model = ChatOpenAI(temperature=0.0, model="gpt-4o")
 
 chain = summary_prompt_template | model
 response = chain.invoke(input={"information": information})
