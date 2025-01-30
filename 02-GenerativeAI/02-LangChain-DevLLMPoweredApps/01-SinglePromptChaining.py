@@ -30,11 +30,11 @@ given the information in {information} about a person, I want you to create
 2. Two interesting facts about them
 """
 summary_prompt_template = PromptTemplate(
-    input_variables={"information"}, template=summary_template
+    input_variables=["information"], template=summary_template
 )
 
 model = ChatOpenAI(temperature=0.0, 
-                   model_name="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"))
+                   model="gpt-4o", api_key=os.getenv("OPENAI_API_KEY"))
 
 chain = summary_prompt_template | model
 response = chain.invoke(input={"information": information})
