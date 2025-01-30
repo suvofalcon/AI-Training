@@ -1,6 +1,7 @@
 # Library imports
 from langchain_ollama import ChatOllama
 from langchain.prompts.prompt import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
 information = """
 Elon Reeve Musk (/ˈiːlɒn/; EE-lon; born June 28, 1971) is a businessman and investor. He is the founder, chairman, CEO, and CTO of SpaceX; 
@@ -34,7 +35,7 @@ summary_prompt_template = PromptTemplate(
 
 model = ChatOllama(temperature=0.0, model="llama3.2")
 
-chain = summary_prompt_template | model
+chain = summary_prompt_template | model | StrOutputParser()
 response = chain.invoke(input={"information": information})
-print(response.content)
+print(response)
 
