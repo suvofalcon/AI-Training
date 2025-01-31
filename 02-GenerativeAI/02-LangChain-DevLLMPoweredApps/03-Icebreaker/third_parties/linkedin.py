@@ -38,7 +38,7 @@ def scrape_linked_profile(linkedin_profile_url: str, mock: bool = False):
 if __name__ == "__main__":
     print(
         scrape_linked_profile(
-            linkedin_profile_url="https://www.linkedin.com/in/subhankarbhattacharya/"
-            #linkedin_profile_url="https://www.linkedin.com/in/eden-marco/"
+            #linkedin_profile_url="https://www.linkedin.com/in/subhankarbhattacharya/"
+            linkedin_profile_url="https://www.linkedin.com/in/eden-marco/"
         )
     )

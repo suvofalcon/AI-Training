@@ -21,7 +21,7 @@ model = ChatOpenAI(temperature=0.0, model="gpt-4o-mini")
 
 chain = summary_prompt_template | model
 
-linkedin_data = scrape_linked_profile(linkedin_profile_url="https://www.linkedin.com/in/subhankarbhattacharya/")
+linkedin_data = scrape_linked_profile(linkedin_profile_url="https://www.linkedin.com/in/eden-marco/")
 response = chain.invoke(input={"information": linkedin_data})
 print(response.content)
 
