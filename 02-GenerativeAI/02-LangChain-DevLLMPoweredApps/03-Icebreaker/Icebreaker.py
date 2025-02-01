@@ -13,11 +13,13 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 # Initialize the llm model
 model = ChatOpenAI(temperature=0.0, model="gpt-4o-mini")
 
+
 def ice_break_with(name: str) -> Tuple:
 
-    # Get the linkedin username profile from the search string 
+    # Get the linkedin username profile from the search string
     linkedin_username_url = linkedin_lookup_agent(name=name)
-    linkedin_data = scrape_linked_profile(linkedin_profile_url=linkedin_username_url)
+    linkedin_data = scrape_linked_profile(
+        linkedin_profile_url=linkedin_username_url)
 
     # Define the prompt template
     summary_template = """
@@ -29,13 +31,14 @@ def ice_break_with(name: str) -> Tuple:
 
     summary_prompt_template = PromptTemplate(
         input_variables=["information"], template=summary_template,
-        partial_variables={"format_instructions": summary_parser.get_format_instructions()}
-    )   
+        partial_variables={
+            "format_instructions": summary_parser.get_format_instructions()}
+    )
 
     # Define the chain of execution and invoke the chain
     chain = summary_prompt_template | model | summary_parser
 
-    response:Summary = chain.invoke(input={"information": linkedin_data})
+    response: Summary = chain.invoke(input={"information": linkedin_data})
     return response, linkedin_data.get("profile_pic_url")
 
 
