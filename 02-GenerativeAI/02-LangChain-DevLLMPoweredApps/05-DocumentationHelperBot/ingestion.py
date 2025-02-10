@@ -33,9 +33,46 @@ def ingest_docs():
                                        index_name="langchain-doc-index")
     print("**** Loading to Vector Store complete...****")
 
+'''
+This function will ingest documents using firecrawl loader
+'''
+def ingest_docs2():
+    from langchain_community.document_loaders import FireCrawlLoader
+
+    langchain_documents_base_urls = [
+        "https://python.langchain.com/v0.2/docs/integrations/chat/",
+        "https://python.langchain.com/v0.2/docs/integrations/llms/",
+        "https://python.langchain.com/v0.2/docs/integrations/text-embedding/",
+        "https://python.langchain.com/v0.2/docs/integrations/document_loaders/",
+        "https://python.langchain.com/v0.2/docs/integrations/document_transformers/",
+        "https://python.langchain.com/v0.2/docs/integrations/vectorstores/",
+        "https://python.langchain.com/v0.2/docs/integrations/retrievers/",
+        "https://python.langchain.com/v0.2/docs/integrations/tools/",
+        "https://python.langchain.com/v0.2/docs/integrations/stores/",
+        "https://python.langchain.com/v0.2/docs/integrations/llm_caching/",
+        "https://python.langchain.com/v0.2/docs/integrations/graphs/",
+        "https://python.langchain.com/v0.2/docs/integrations/memory/,"
+        "https://python.langchain.com/v0.2/docs/integrations/callbacks/",
+        "https://python.langchain.com/v0.2/docs/integrations/chat_loaders/",
+        "https://python.langchain.com/v0.2/docs/integrations/concepts/"
+    ]
+
+    # Since this is lot of information, for demo purposes only taking the first url from the list and showing
+    #langchain_documents_base_urls_mini = [langchain_documents_base_urls[0]]
+
+    for url in langchain_documents_base_urls:
+        print(f"FireCrawling {url=}")
+        loader = FireCrawlLoader(
+            url=url,
+            mode="scrape",
+        )
+        docs = loader.load()
+        print(f"Going to add {len(docs)} documents to Pinecone vector store")
+        PineconeVectorStore.from_documents(embedding=embeddings, index_name="firecrawl-index", documents=docs)
+        print("**** Loading {url) to Vector Store complete...****")
 
 if __name__ == '__main__':
-    ingest_docs()
+    ingest_docs2()
 
 
 
