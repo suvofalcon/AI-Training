@@ -2,6 +2,14 @@
 This file is all about a basic implementation approach for CrewAI
 """
 import os
+
+from dotenv import load_dotenv
+load_dotenv()
+
+# Setup Langtrace
+from langtrace_python_sdk import langtrace
+langtrace.init(api_key=os.environ["LANGTRACE_API_KEY"])
+
 from crewai import Agent, Task, Crew, Process, LLM
 from crewai_tools import SerperDevTool
 
