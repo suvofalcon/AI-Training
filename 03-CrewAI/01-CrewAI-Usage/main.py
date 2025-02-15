@@ -16,7 +16,7 @@ from crewai_tools import SerperDevTool
 def main():
 
     # Initialize the LLM
-    model = LLM(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-4-turbo", temperature=0.5)
+    model = LLM(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-4o-mini", temperature=0.5)
 
     # Agent Definition
     researcher = Agent(
