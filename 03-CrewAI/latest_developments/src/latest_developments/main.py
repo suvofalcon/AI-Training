@@ -1,8 +1,15 @@
 #!/usr/bin/env python
-import sys
+import os
 import warnings
-
 from datetime import datetime
+
+from dotenv import load_dotenv
+load_dotenv()
+
+# Setup Langtrace
+from langtrace_python_sdk import langtrace
+langtrace.init(api_key=os.environ["LANGTRACE_API_KEY"])
+
 from latest_developments.src.latest_developments.crew import LatestDevelopments
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
