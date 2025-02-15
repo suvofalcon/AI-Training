@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import sys
 import warnings
 
 from datetime import datetime
