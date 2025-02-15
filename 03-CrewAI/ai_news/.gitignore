@@ -1,0 +1,5 @@
+.env
+__pycache__/
+.DS_Store
+/src/ai_news/news/
+/src/ai_news/report.md
