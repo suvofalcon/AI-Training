@@ -21,9 +21,25 @@ def run():
         'topic': 'Satyajit Ray',
         'current_year': str(datetime.now().year)
     }
-    
+
+    inputs_array = [
+        {
+            'topic': 'electric vehicles',
+            'date': datetime.now().strftime('%Y-%m-%d_%H-%M-%S_1')
+        },
+        {
+            'topic': 'nvidia RTX',
+            'date': datetime.now().strftime('%Y-%m-%d_%H-%M-%S_2')
+        },
+        {
+          'topic': 'Linux Kernel',
+          'date': datetime.now().strftime('%Y-%m-%d_%H-%M-%S_3')
+        }
+    ]
+
     try:
-        AiNews().crew().kickoff(inputs=inputs)
+        #AiNews().crew().kickoff(inputs=inputs)
+        AiNews().crew().kickoff_for_each(inputs=inputs_array)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
