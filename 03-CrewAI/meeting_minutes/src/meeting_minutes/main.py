@@ -55,6 +55,12 @@ class MeetingMinutesFlow(Flow[MeetingMinutesState]):
 
         meeting_minutes = crew.crew().kickoff(inputs=inputs)
         self.state.meeting_minutes = meeting_minutes
+        print(f"Meeting Minutes Completed - {self.state.meeting_minutes}")
+
+
+    @listen(generate_meeting_minutes)
+    def create_draft_meeting_minutes(self):
+        print("Creating Draft Meeting Minutes")
 
 
 def kickoff():
