@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import os
+import agentops
 from dotenv import load_dotenv
 from pydantic import BaseModel
 from openai import OpenAI
@@ -64,8 +66,13 @@ class MeetingMinutesFlow(Flow[MeetingMinutesState]):
 
 
 def kickoff():
+    session = agentops.init(api_key=os.getenv("AGENTOPS_API_KEY"))
+
     meeting_minutes_flow = MeetingMinutesFlow()
+    meeting_minutes_flow.plot()
     meeting_minutes_flow.kickoff()
+
+    session.end_session()
 
 
 def plot():
