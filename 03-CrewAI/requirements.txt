@@ -4,6 +4,7 @@ aiohttp==3.11.12
 aiosignal==1.3.2
 alembic==1.14.1
 annotated-types==0.7.0
+anthropic==0.47.1
 anyio==4.8.0
 appdirs==1.4.4
 asgiref==3.8.1
@@ -92,10 +93,12 @@ jsonschema-specifications==2024.10.1
 kubernetes==32.0.0
 lancedb==0.19.0
 langchain==0.3.18
+langchain-anthropic==0.3.8
 langchain-cohere==0.3.5
 langchain-community==0.3.17
-langchain-core==0.3.35
+langchain-core==0.3.39
 langchain-experimental==0.3.4
+langchain-ollama==0.2.3
 langchain-openai==0.2.14
 langchain-text-splitters==0.3.6
 langsmith==0.1.147
@@ -117,6 +120,7 @@ networkx==3.4.2
 nodeenv==1.9.1
 numpy==1.26.4
 oauthlib==3.2.2
+ollama==0.4.7
 onnxruntime==1.20.1
 openai==1.62.0
 openpyxl==3.1.5
