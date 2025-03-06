@@ -22,7 +22,11 @@ def run():
     }
     
     try:
-        LatestDevelopmentsOllama().crew().kickoff(inputs=inputs)
+        result = LatestDevelopmentsOllama().crew().kickoff(inputs=inputs)
+        print(f"\n - The most relevant information about {inputs['topic']}")
+        print(result.tasks_output[0])
+        print(f"\n - The full fledged report about {inputs['topic']}")
+        print(result.tasks_output[1])
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
