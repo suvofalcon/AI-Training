@@ -1,0 +1,2 @@
+REFLECT = "reflect"
+GENERATE = "generate"
