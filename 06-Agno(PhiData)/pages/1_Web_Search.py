@@ -2,6 +2,8 @@ import streamlit as st
 
 import time
 import numpy as np
+from agno.run.response import RunResponse
+
 from agents import web_search_agent
 
 st.set_page_config(page_title="Web Search")
@@ -9,9 +11,10 @@ st.set_page_config(page_title="Web Search")
 st.title("Web Search using Agnos Agent")
 st.markdown("---")
 
-st.text_area("Give your search here")
+search_text = st.text_area("Give your search here")
 
 if st.button("Search"):
     agent = web_search_agent.agent_search()
+    response: RunResponse = agent.run(search_text)
+    st.write(response.content)
 
-    st.write(agent.print_response("Whats happening in France?", stream=True))
