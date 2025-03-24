@@ -1,7 +1,4 @@
 import streamlit as st
-
-import time
-import numpy as np
 from agno.run.response import RunResponse
 
 from agents import web_search_agent
