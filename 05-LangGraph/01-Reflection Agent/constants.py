@@ -1,2 +1,0 @@
-REFLECT = "reflect"
-GENERATE = "generate"
